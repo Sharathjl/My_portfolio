@@ -1,13 +1,5 @@
-// script.js
-
+// Typed Text Animation
 const typedText = document.getElementById("typed");
-
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("mobileMenu");
-    menu.classList.toggle("active");
-  }
-</script>
 
 // Customize the list of roles here
 const words = ["VLSI Enthusiast", "RTL Designer", "Digital Logic Developer", "ASIC Explorer"];
@@ -38,3 +30,9 @@ function type() {
 document.addEventListener("DOMContentLoaded", () => {
   type();
 });
+
+// Mobile Menu Toggle
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("active");
+}
