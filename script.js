@@ -2,6 +2,13 @@
 
 const typedText = document.getElementById("typed");
 
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("active");
+  }
+</script>
+
 // Customize the list of roles here
 const words = ["VLSI Enthusiast", "RTL Designer", "Digital Logic Developer", "ASIC Explorer"];
 let wordIndex = 0;
