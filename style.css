@@ -1,25 +1,26 @@
 /* Reset & base styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #0e0e1a;
-    color: #ffffff;
-    line-height: 1.6;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e1a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
 /* Responsive Mobile Navigation */
 .mobile-nav {
   display: none;
   position: absolute;
-  top: 60px;
+  top: 70px;
   left: 0;
   right: 0;
   background: #111;
-  z-index: 999;
+  z-index: 1000;
   padding: 20px 0;
   text-align: center;
 }
@@ -29,85 +30,105 @@
   color: white;
   padding: 10px 0;
   text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.mobile-nav a:hover {
+  background: #1f1f2e;
 }
 
 .hamburger {
   display: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
   color: white;
   padding: 10px 20px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
 }
 
-/* Show only on mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
 
-  nav.desktop-nav {  /* Assuming your current nav is desktop-only */
+  nav ul {
     display: none;
   }
 
   .mobile-nav.active {
     display: block;
   }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .logo {
+    margin-bottom: 10px;
+  }
 }
-  
+
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: #0d0d0d; /* Dark background */
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Optional: subtle shadow for depth */
-  }
-  
-  .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #ffffff;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-  }
-  
-  nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #a363ff;
-  }
-  
-  .github-btn,
-  .linkedin-btn {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 8px 16px;
-    background-color: #7f00ff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-  }
-  
-  .github-btn:hover,
-  .linkedin-btn:hover {
-    background-color: #5c00cc;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #0d0d0d;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a363ff;
+}
+
+.github-btn,
+.linkedin-btn {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #7f00ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.github-btn:hover,
+.linkedin-btn:hover {
+  background-color: #5c00cc;
+}
+
+/* (rest of your original CSS continues unchanged...) */
+
   /* Hero Section */
   .hero {
     display: flex;
