@@ -11,6 +11,48 @@
     color: #ffffff;
     line-height: 1.6;
   }
+/* Responsive Mobile Navigation */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: #111;
+  z-index: 999;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.mobile-nav a {
+  display: block;
+  color: white;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Show only on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav.desktop-nav {  /* Assuming your current nav is desktop-only */
+    display: none;
+  }
+
+  .mobile-nav.active {
+    display: block;
+  }
+}
   
 /* Navbar */
 .navbar {
