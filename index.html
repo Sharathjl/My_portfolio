@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     html {
       scroll-behavior: smooth;
@@ -19,17 +18,17 @@
   </style>
 </head>
 
-<div class="hamburger" onclick="toggleMenu()">☰</div>
-
-<nav class="mobile-nav" id="mobileMenu">
-  <a href="#about" onclick="toggleMenu()">About</a>
-  <a href="#skills" onclick="toggleMenu()">Skills</a>
-  <a href="#experience" onclick="toggleMenu()">Experience</a>
-  <a href="#projects" onclick="toggleMenu()">Projects</a>
-  <a href="#education" onclick="toggleMenu()">Education</a>
-</nav>
-  
 <body>
+  <!-- Mobile Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav class="mobile-nav" id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#experience" onclick="toggleMenu()">Experience</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#education" onclick="toggleMenu()">Education</a>
+  </nav>
+
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">My Portfolio</div>
@@ -44,11 +43,9 @@
     </nav>
     <a class="github-btn" href="https://github.com/Sharathjl" target="_blank">GitHub</a>
     <a class="linkedin-btn" href="http://linkedin.com/in/sharathg-vlsi" target="_blank">LinkedIn</a>
-
-    
   </header>
 
-  <!-- Hero Section (used as About) -->
+  <!-- Hero Section -->
   <section class="hero" id="about">
     <div class="hero-text">
       <h1>Hi, I am <br><span class="name">Sharath G</span></h1>
@@ -104,11 +101,11 @@
       </div>
     </div>
   </section>
-<!-- Experience Section -->
-<section class="experience" id="experience">
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
     <h2 class="section-title">Experience</h2>
     <p class="section-subtitle">My Journey in VLSI and Embedded Systems</p>
-  
     <div class="experience-container">
       <div class="exp-card">
         <h3>Embedded Design Intern</h3>
@@ -119,20 +116,18 @@
           <li>Exploring digital system optimization and GenAI integration for efficient AI inference</li>
         </ul>
       </div>
-  
       <div class="exp-card">
-        <h3>SoC Design & Planning Intern </h3>
+        <h3>SoC Design & Planning Intern</h3>
         <span class="exp-company">VLSI System Design</span>
         <span class="exp-duration">Aug 2024 – Sep 2024</span>
         <ul>
-          <li>Designed & implemented a RISC-V based SoC from RTL-to-GDSII using OpenLane & SKY130</li>
+          <li>Designed & implemented a RISC-V based SoC from RTL-to-GDSII using OpenLane & SKY130.</li>
           <li>Performed Synthesis, Floorplanning, Placement & Routing, STA, and DRC/LVS verification.</li>
           <li>Contributed to design closure & power-performance optimization for final chip tape-out.</li>
         </ul>
       </div>
-  
       <div class="exp-card">
-        <h3>Practical IC design intern</h3>
+        <h3>Practical IC Design Intern</h3>
         <span class="exp-company">BMS College Of Engineering</span>
         <span class="exp-duration">Jul 2024 – Aug 2024</span>
         <ul>
@@ -141,91 +136,71 @@
       </div>
     </div>
   </section>
-  
+
+  <!-- Projects Section -->
   <section class="projects" id="projects">
     <h2 class="section-title">Projects</h2>
     <p class="section-subtitle">Hands-on experience through practical applications.</p>
-  
     <div class="project-item">
       <h3>RISC-V Based Pipelined Processor Design</h3>
       <p><strong>Tools Used:</strong> Verilog, Cadence Xcelium, GTK Wave Viewer</p>
       <p>Designed a pipelined RISC-V processor in Verilog with modules for instruction fetch, decode, execution, memory, and writeback. Verified functional correctness through simulation.</p>
-      <a href="https://github.com/Sharathjl/Design-of-5-Stage-32-Bit-Pipelined-MIPS-Processor" target="_blank" class="github-link">
-        GitHub Link
-      </a>
-      
+      <a href="https://github.com/Sharathjl/Design-of-5-Stage-32-Bit-Pipelined-MIPS-Processor" target="_blank" class="github-link">GitHub Link</a>
     </div>
-  
     <div class="project-item">
       <h3>UART Communication Protocol</h3>
       <p><strong>Tools Used:</strong> Verilog, Vivado, System Verilog</p>
-      <p>Designed and implemented a UART protocol in Verilog with transmitter, receiver, FSM, baud rate generator, and shift registers; verified using SystemVerilog with assertions, coverage, and error scenario checks.</p>
-      <a href="https://github.com/Sharathjl/UART-Communication-Protocol-" target="_blank" class="github-link">
-        GitHub Link 
-      </a>
+      <p>Designed and implemented a UART protocol with transmitter, receiver, FSM, and shift registers; verified using SystemVerilog with assertions, coverage, and error checks.</p>
+      <a href="https://github.com/Sharathjl/UART-Communication-Protocol-" target="_blank" class="github-link">GitHub Link</a>
     </div>
-  
     <div class="project-item">
       <h3>AMBA-APB Protocol</h3>
       <p><strong>Tools Used:</strong> Verilog, Vivado, System Verilog, GTK Wave viewer</p>
-      <p>Designed and implemented an AMBA-APB bus in Verilog with APB master, slave, and FSM; verified using a SystemVerilog testbench. Developed assertions and functional coverage to validate protocol compliance and handle protocol violation scenarios.</p>
-      <a href="https://github.com/Sharathjl/AMBA---APB-Protocol" target="_blank" class="github-link">
-        GitHub Link 
-      </a>
+      <p>Designed an AMBA-APB bus in Verilog with master/slave modules; verified using SystemVerilog testbench with assertions and functional coverage.</p>
+      <a href="https://github.com/Sharathjl/AMBA---APB-Protocol" target="_blank" class="github-link">GitHub Link</a>
     </div>
-  
     <div class="project-item">
       <h3>CMOS Power Amplifier Design</h3>
-      <p><strong>Tools Used:</strong> Cadence Vistuoso, Assura, Spectre</p>
-      <p>Designed a two-stage CMOS amplifier in Cadence Virtuoso, optimized for gain and power using 45nm and 90nm technologies. Validated performance using Spectre simulations to ensure design efficiency across process nodes.</p>
-      </a>
+      <p><strong>Tools Used:</strong> Cadence Virtuoso, Assura, Spectre</p>
+      <p>Designed a two-stage CMOS amplifier in 45nm & 90nm. Simulated and optimized for power/gain using Spectre.</p>
     </div>
-  
     <div class="project-item">
       <h3>Physical Design of LFSR (RTL-to-GDSII)</h3>
       <p><strong>Tools Used:</strong> OpenLane, Yosys, OpenSTA</p>
-      <p>Designed an LFSR in Verilog and performed full physical design flow using OpenLane, from synthesis to GDSII. Generated reports for area, power, and timing; verified layout with Magic and completed CTS using OpenSTA.</p>
-      <a href="https://github.com/Sharathjl/NASSCOM_VSD_SoC_design-Physical-Design-Flow" target="_blank" class="github-link">
-        GitHub Link 
-      </a>
+      <p>Designed LFSR in Verilog and completed full physical design flow using OpenLane. Verified layout using Magic; performed CTS and STA.</p>
+      <a href="https://github.com/Sharathjl/NASSCOM_VSD_SoC_design-Physical-Design-Flow" target="_blank" class="github-link">GitHub Link</a>
     </div>
   </section>
 
+  <!-- Education Section -->
   <section id="education">
     <div class="education-container">
       <h2>Education</h2>
-      <p class="edu-subtitle">My education has been a journey of self-discovery and growth. My educational details are as follows.</p>
-  
+      <p class="edu-subtitle">My education has been a journey of self-discovery and growth.</p>
       <div class="edu-timeline">
-  
         <div class="edu-card">
           <h3>BMS College of Engineering, Bengaluru</h3>
           <p class="degree">B.E. in Electronics and Communication • 2022 – Present</p>
           <p class="grade">CGPA: 8.30</p>
-          <p>Currently pursuing my bachelor's in ECE, developing a strong foundation in VLSI, embedded systems, and signal processing through hands-on projects and coursework.</p>
+          <p>Focused on VLSI, embedded systems, and signal processing through projects and coursework.</p>
         </div>
-  
         <div class="edu-card">
           <h3>MEI Polytechnic, Bangalore</h3>
           <p class="degree">Diploma in Electronics and Communication • 2019 – 2022</p>
           <p class="grade">Percentage: 92%</p>
-          <p>Completed diploma with distinction. Gained practical knowledge in electronic circuit design, microcontrollers, and communication systems.</p>
+          <p>Gained practical knowledge in circuit design, microcontrollers, and communication systems.</p>
         </div>
-  
         <div class="edu-card">
           <h3>Gandhi Vidya Shala, Bangalore</h3>
           <p class="degree">10th Grade • 2018 – 2019</p>
           <p class="grade">Percentage: 89.6%</p>
-          <p>Laid a strong academic foundation in science and mathematics, fostering problem-solving skills and curiosity-driven learning.</p>
+          <p>Built a strong foundation in science and mathematics, developing analytical thinking skills.</p>
         </div>
-  
       </div>
     </div>
   </section>
-  
-  <!-- Other sections above -->
 
-  <!-- ✅ Footer Icons Section -->
+  <!-- Footer -->
   <footer id="contact">
     <h2 class="footer-name">Sharath G</h2>
     <div class="footer-nav">
@@ -235,18 +210,12 @@
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
     </div>
-  <footer class="footer">
     <div class="footer-icons">
-      <a href="mailto:sharathsaijl@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="http://linkedin.com/in/sharathg-vlsi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://wa.me/9739285271" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://github.com/Sharathjl" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:navaneethankv.official@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+919487821535"><i class="fas fa-phone"></i></a>
+      <a href="https://www.linkedin.com/in/navaneethan-kv" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Navaneethankv02" target="_blank"><i class="fab fa-github"></i></a>
     </div>
-    <p class="footer-text">© 2025 Sharath G. All rights reserved.</p>
   </footer>
-
-</body>
-
-
 </body>
 </html>
