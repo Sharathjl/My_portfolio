@@ -125,40 +125,50 @@ nav ul li a:hover {
   background-color: #5c00cc;
 }
 
-  /* Hero Image */
-  .hero-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Hero Section (Desktop) */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Hero Image */
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img img {
+  max-width: 300px;
+  border-radius: 50%;
+  border: 3px solid #a363ff;
+  box-shadow: 0 0 20px rgba(163, 99, 255, 0.4);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
   }
-  
-  .hero-img img {
-    max-width: 300px;
-    border-radius: 50%;
-    border: 3px solid #a363ff;
-    box-shadow: 0 0 20px rgba(163, 99, 255, 0.4);
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  /* Responsive */
-  @media screen and (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      padding: 50px 20px;
-      text-align: center;
-    }
-  
-    .navbar {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-    }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
-  
+}
+
   /* ========== Skills Section ========== */
 .skills {
     padding: 80px 20px;
