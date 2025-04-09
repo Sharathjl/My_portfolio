@@ -14,6 +14,7 @@ body {
 
 /* Responsive Mobile Navigation */
 /* Mobile Nav Styling */
+/* Mobile Nav Styling */
 .mobile-nav {
   display: none;
   flex-direction: column;
@@ -38,7 +39,6 @@ body {
   display: flex;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -51,7 +51,6 @@ body {
   z-index: 1100;
 }
 
-/* Show hamburger only on small screens */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -65,7 +64,6 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-}
 
   .navbar .logo {
     margin-bottom: 10px;
