@@ -18,7 +18,18 @@
   </style>
 </head>
 <body>
-  <!-- Navbar -->
+
+  <!-- ✅ Hamburger + Mobile Nav (placed outside the header for proper layout) -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav class="mobile-nav" id="mobileMenu">
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#experience" onclick="toggleMenu()">Experience</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#education" onclick="toggleMenu()">Education</a>
+  </nav>
+
+  <!-- ✅ Navbar -->
   <header class="navbar">
     <div class="logo">My Portfolio</div>
 
@@ -36,16 +47,6 @@
     <!-- CTA Buttons -->
     <a class="github-btn" href="https://github.com/Sharathjl" target="_blank">GitHub</a>
     <a class="linkedin-btn" href="http://linkedin.com/in/sharathg-vlsi" target="_blank">LinkedIn</a>
-
-    <!-- Hamburger + Mobile Nav -->
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <nav class="mobile-nav" id="mobileMenu">
-      <a href="#about" onclick="toggleMenu()">About</a>
-      <a href="#skills" onclick="toggleMenu()">Skills</a>
-      <a href="#experience" onclick="toggleMenu()">Experience</a>
-      <a href="#projects" onclick="toggleMenu()">Projects</a>
-      <a href="#education" onclick="toggleMenu()">Education</a>
-    </nav>
   </header>
 
   <!-- Remaining content goes here -->
