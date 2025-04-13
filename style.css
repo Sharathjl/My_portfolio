@@ -12,64 +12,6 @@ body {
   line-height: 1.6;
 }
 
-/* Responsive Mobile Navigation */
-/* Mobile Nav Styling */
-/* Mobile Nav Styling */
-.mobile-nav {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background: #111;
-  padding: 1rem;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.mobile-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 10px 0;
-  font-size: 1.1rem;
-}
-
-.mobile-nav.active {
-  display: flex;
-}
-
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  padding: 10px 20px;
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 1100;
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .desktop-nav {
-    display: none;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar .logo {
-    margin-bottom: 10px;
-  }
-}
-
 /* Navbar */
 .navbar {
   display: flex;
@@ -107,6 +49,7 @@ nav ul li a:hover {
   color: #a363ff;
 }
 
+/* CTA Buttons */
 .github-btn,
 .linkedin-btn {
   display: inline-block;
@@ -125,6 +68,88 @@ nav ul li a:hover {
   background-color: #5c00cc;
 }
 
+/* Hide mobile-only by default (desktop) */
+.mobile-only {
+  display: none;
+}
+
+/* Show desktop-only buttons by default */
+.desktop-only {
+  display: inline-block;
+}
+
+/* Responsive Mobile Navigation */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #111;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 1100;
+}
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .logo {
+    margin-bottom: 10px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .mobile-only.github-btn,
+  .mobile-only.linkedin-btn {
+    margin: 10px auto;
+    width: 90%;
+  }
+}
 
   /* Hero Section */
   .hero {
