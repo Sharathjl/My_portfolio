@@ -23,6 +23,7 @@ body {
 }
 
 /* Navbar */
+/* Update this */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -33,19 +34,15 @@ body {
   top: 0;
   z-index: 999;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* <== This is the key fix */
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
+/* Optional, keep nav-right from wrapping too */
 .nav-right {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: nowrap;
 }
 
 /* Ensure nav ul doesn’t expand too much */
