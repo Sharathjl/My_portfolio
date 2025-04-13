@@ -172,41 +172,34 @@ nav ul li a:hover {
   }
 }
 
-  /* Hero Section */
+ /* Hero Section */
   .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px 100px;
     flex-wrap: wrap;
-    color: #ffffff;
   }
   
   .hero-text {
     flex: 1;
     max-width: 600px;
-    color: #ffffff;
   }
   
   .hero-text h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #ffffff;
-    
   }
   
- .hero-text .name {
-  font-weight: 800;
-  color: #ffffff; /* Optional */
-}
-
+  .hero-text .name {
+    color: #ffffff;
+  }
   
   .hero-text h2 {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #ffffff; /* ✅ Add this */
   }
   
   .typed-text {
