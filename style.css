@@ -42,11 +42,21 @@ body {
   color: #ffffff;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Ensure nav ul doesn’t expand too much */
 nav ul {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
+
 
 nav ul li a {
   color: #ffffff;
