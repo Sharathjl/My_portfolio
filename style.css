@@ -126,6 +126,68 @@ nav ul li a:hover {
 }
 
 
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text .name {
+    color: #ffffff;
+  }
+  
+  .hero-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .typed-text {
+    color: #a363ff;
+    border-right: 2px solid #a363ff;
+    padding-right: 5px;
+    animation: blink 0.75s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #a363ff; }
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    color: #cccccc;
+    margin-bottom: 25px;
+  }
+  
+  .resume-btn {
+    background: #a363ff;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background: #842eff;
+  }
+  
   /* Hero Image */
   .hero-img {
     flex: 1;
@@ -160,7 +222,6 @@ nav ul li a:hover {
     }
   }
   
-
   /* ========== Skills Section ========== */
 .skills {
     padding: 80px 20px;
