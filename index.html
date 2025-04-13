@@ -19,35 +19,39 @@
 </head>
 <body>
 
-  <!-- ✅ Hamburger + Mobile Nav (placed outside the header for proper layout) -->
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-  <nav class="mobile-nav" id="mobileMenu">
-    <a href="#about" onclick="toggleMenu()">About</a>
-    <a href="#skills" onclick="toggleMenu()">Skills</a>
-    <a href="#experience" onclick="toggleMenu()">Experience</a>
-    <a href="#projects" onclick="toggleMenu()">Projects</a>
-    <a href="#education" onclick="toggleMenu()">Education</a>
+<!-- ✅ Hamburger + Mobile Nav (placed outside the header for proper layout) -->
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+<nav class="mobile-nav" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#skills" onclick="toggleMenu()">Skills</a>
+  <a href="#experience" onclick="toggleMenu()">Experience</a>
+  <a href="#projects" onclick="toggleMenu()">Projects</a>
+  <a href="#education" onclick="toggleMenu()">Education</a>
+  
+  <!-- ✅ GitHub and LinkedIn for mobile -->
+  <a class="github-btn mobile-only" href="https://github.com/Sharathjl" target="_blank">GitHub</a>
+  <a class="linkedin-btn mobile-only" href="http://linkedin.com/in/sharathg-vlsi" target="_blank">LinkedIn</a>
+</nav>
+
+<!-- ✅ Navbar -->
+<header class="navbar">
+  <div class="logo">My Portfolio</div>
+
+  <!-- Desktop Nav -->
+  <nav class="desktop-nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
   </nav>
 
-  <!-- ✅ Navbar -->
-  <header class="navbar">
-    <div class="logo">My Portfolio</div>
-
-    <!-- Desktop Nav -->
-    <nav class="desktop-nav">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-      </ul>
-    </nav>
-
-    <!-- CTA Buttons -->
-    <a class="github-btn" href="https://github.com/Sharathjl" target="_blank">GitHub</a>
-    <a class="linkedin-btn" href="http://linkedin.com/in/sharathg-vlsi" target="_blank">LinkedIn</a>
-  </header>
+  <!-- CTA Buttons for Desktop -->
+  <a class="github-btn desktop-only" href="https://github.com/Sharathjl" target="_blank">GitHub</a>
+  <a class="linkedin-btn desktop-only" href="http://linkedin.com/in/sharathg-vlsi" target="_blank">LinkedIn</a>
+</header>
 
   <!-- Remaining content goes here -->
 
