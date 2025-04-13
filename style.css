@@ -192,9 +192,11 @@ nav ul li a:hover {
     margin-bottom: 10px;
   }
   
-  .hero-text .name {
-    color: #ffffff;
-  }
+ .hero-text .name {
+  font-weight: 800;
+  color: #ffffff; /* Optional */
+}
+
   
   .hero-text h2 {
     font-size: 1.8rem;
