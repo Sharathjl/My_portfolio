@@ -1,2 +1,2 @@
 # My_portfolio
-Createde using HTML, CSS, Javascript.
+Created using HTML, CSS, Javascript.
